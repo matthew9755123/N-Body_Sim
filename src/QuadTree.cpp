@@ -100,11 +100,10 @@ void QuadTreeNode::calculateForces(Body& targetBody, float theta) {
     if (region.mass == 0) return; //NOT if (bodies.empty()) return;
 
     sf::Vector2f bodyPos = targetBody.getPosition();
-    sf::Vector2f comPos = region.centerOfMass;
+    sf::Vector2f regionCOM = region.centerOfMass;
     
-    float distanceSquared = ((comPos.x - bodyPos.x)*(comPos.x - bodyPos.x)) +
-                            ((comPos.y - bodyPos.y)*(comPos.y - bodyPos.y));
-    float distance = std::sqrt(distanceSquared);
+    float distance = std::sqrt(((regionCOM.x - bodyPos.x)*(regionCOM.x - bodyPos.x)) +
+                            ((regionCOM.y - bodyPos.y)*(regionCOM.y - bodyPos.y)));
 
     float s = region.width;
     

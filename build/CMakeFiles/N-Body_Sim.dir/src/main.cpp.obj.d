@@ -301,4 +301,5 @@ CMakeFiles/N-Body_Sim.dir/src/main.cpp.obj: \
  C:/mingw64/include/c++/14.2.0/tr1/poly_laguerre.tcc \
  C:/mingw64/include/c++/14.2.0/tr1/riemann_zeta.tcc \
  C:\Users\matth\Desktop\N-Body_Sim\src\Force.h \
- C:\Users\matth\Desktop\N-Body_Sim\src\Simulation.h
+ C:\Users\matth\Desktop\N-Body_Sim\src\Simulation.h \
+ C:\Users\matth\Desktop\N-Body_Sim\src\timer.hpp

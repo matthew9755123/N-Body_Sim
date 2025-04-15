@@ -7,8 +7,8 @@
     #include "QuadTree.h"
     #include <omp.h>
 
-    QuadTreeNode::Region squilly({960, 540}, 1920, 1);
-    QuadTreeNode testTree(squilly, 1); 
+    QuadTreeNode::Region squilly({960, 540}, 1920, 5);
+    QuadTreeNode testTree(squilly, 5); 
     
     //RATIO 0.00006
     Simulation::Simulation() {
@@ -18,7 +18,7 @@
         Body bigMass1(960, 540, 10000000.0f, 5.0f, sf::Color(186, 62, 0)); 
         bodies.push_back(bigMass1);
 
-        int numBodies = 4000;
+        int numBodies = 5000;
         std::uniform_real_distribution<> angleDist(0, 2 * M_PI);
         std::exponential_distribution<> distDist(0.01);
         std::uniform_real_distribution<> xDist(0, 1920);
@@ -41,29 +41,31 @@
     }
     
     void Simulation::update(float deltaTime) {
-        auto start = std::chrono::high_resolution_clock::now();
+        t.start();
 
-        testTree = QuadTreeNode(squilly, 1);
-
+        testTree = QuadTreeNode(squilly, 5);
         for (auto& body : bodies) {
             testTree.insert(body);
         }
-    
         testTree.propagate();
 
+        t.stop();
+        treeBuildTimes.push_back(t.elapsed());
+
+        t.start();
         float theta = 0.5;
         for (auto& body : bodies) {
             testTree.calculateForces(body, theta);
         }
-    
+        t.stop();
+        calculateForcesTimes.push_back(t.elapsed());
+
+        t.start();
         for (auto& body : bodies) {
             body.update(deltaTime);
         }
-
-        auto end = std::chrono::high_resolution_clock::now();
-        std::chrono::duration<double> elapsed = end - start;
-        std::cout << "Update time: " << elapsed.count() * 1000.0 << " ms" << std::endl;
-;
+        t.stop();
+        updateBodiesTimes.push_back(t.elapsed());
     }
 
     void Simulation::render(sf::RenderWindow& window) {
@@ -71,4 +73,10 @@
             body.draw(window);
         }
         //testTree.draw(window);
+    }
+
+    void Simulation::printStats() {
+        std::cout << "Average Tree Build Time: " << std::accumulate(treeBuildTimes.begin(), treeBuildTimes.end(), 0.0)/treeBuildTimes.size() << "ms" << std::endl;
+        std::cout << "Average Force Calc Time: " << std::accumulate(calculateForcesTimes.begin(), calculateForcesTimes.end(), 0.0)/calculateForcesTimes.size() << "ms" << std::endl;
+        std::cout << "Average Update Bodies Time: " << std::accumulate(updateBodiesTimes.begin(), updateBodiesTimes.end(), 0.0)/updateBodiesTimes.size() << "ms" << std::endl;
     }

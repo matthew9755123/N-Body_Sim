@@ -301,6 +301,7 @@ CMakeFiles/N-Body_Sim.dir/src/Simulation.cpp.obj: \
  C:/mingw64/include/c++/14.2.0/tr1/poly_laguerre.tcc \
  C:/mingw64/include/c++/14.2.0/tr1/riemann_zeta.tcc \
  C:\Users\matth\Desktop\N-Body_Sim\src\Force.h \
+ C:\Users\matth\Desktop\N-Body_Sim\src\timer.hpp \
  C:/mingw64/include/c++/14.2.0/random \
  C:/mingw64/include/c++/14.2.0/bits/random.h \
  C:/mingw64/include/c++/14.2.0/bits/uniform_int_dist.h \
