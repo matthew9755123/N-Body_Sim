@@ -1,0 +1,35 @@
+_deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Win32/SensorImpl.cpp.obj: \
+ C:\Users\matth\Desktop\N-Body_Sim\build\_deps\sfml-src\src\SFML\Window\Win32\SensorImpl.cpp \
+ C:/Users/matth/Desktop/N-Body_Sim/build/_deps/sfml-src/src/SFML/Window/SensorImpl.hpp \
+ C:/Users/matth/Desktop/N-Body_Sim/build/_deps/sfml-src/include/SFML/Config.hpp \
+ C:/Users/matth/Desktop/N-Body_Sim/build/_deps/sfml-src/include/SFML/Window/Sensor.hpp \
+ C:/Users/matth/Desktop/N-Body_Sim/build/_deps/sfml-src/include/SFML/Window/Export.hpp \
+ C:/Users/matth/Desktop/N-Body_Sim/build/_deps/sfml-src/include/SFML/System/Vector3.hpp \
+ C:/Users/matth/Desktop/N-Body_Sim/build/_deps/sfml-src/include/SFML/System/Export.hpp \
+ C:/Users/matth/Desktop/N-Body_Sim/build/_deps/sfml-src/include/SFML/System/Vector3.inl \
+ C:/mingw64/include/c++/14.2.0/cassert \
+ C:/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
+ C:/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h \
+ C:/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
+ C:/mingw64/include/c++/14.2.0/pstl/pstl_config.h \
+ C:/mingw64/x86_64-w64-mingw32/include/assert.h \
+ C:/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
+ C:/mingw64/x86_64-w64-mingw32/include/corecrt.h \
+ C:/mingw64/x86_64-w64-mingw32/include/_mingw.h \
+ C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
+ C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ C:/mingw64/x86_64-w64-mingw32/include/vadefs.h \
+ C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ C:/mingw64/include/c++/14.2.0/stdlib.h \
+ C:/mingw64/include/c++/14.2.0/cstdlib \
+ C:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
+ C:/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h \
+ C:/mingw64/x86_64-w64-mingw32/include/limits.h \
+ C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
+ C:/mingw64/x86_64-w64-mingw32/include/errno.h \
+ C:/mingw64/include/c++/14.2.0/bits/std_abs.h \
+ C:/Users/matth/Desktop/N-Body_Sim/build/_deps/sfml-src/src/SFML/Window/Win32/SensorImpl.hpp

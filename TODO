@@ -1,0 +1,4 @@
+Create a way to measure performance
+Change current AoS implementation to a SoA implementation
+Utilize SIMD
+Possibly look into multithreading for O(n^2) portions of the algorithm
