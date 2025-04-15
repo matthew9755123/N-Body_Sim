@@ -3,6 +3,7 @@
 #include <SFML/Graphics.hpp>
 #include "Simulation.h"
 #include "QuadTree.h"
+#include <thread>
 
 int main() {
     sf::RenderWindow window(sf::VideoMode({1920, 1080}), "N-Body Simulation", sf::State::Fullscreen);

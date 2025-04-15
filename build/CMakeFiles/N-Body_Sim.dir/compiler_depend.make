@@ -1069,6 +1069,7 @@ CMakeFiles/N-Body_Sim.dir/src/Simulation.cpp.obj: C:/Users/matth/Desktop/N-Body_
   C:/mingw64/include/c++/14.2.0/bits/specfun.h \
   C:/mingw64/include/c++/14.2.0/bits/sstream.tcc \
   C:/mingw64/include/c++/14.2.0/bits/std_abs.h \
+  C:/mingw64/include/c++/14.2.0/bits/std_thread.h \
   C:/mingw64/include/c++/14.2.0/bits/stl_algo.h \
   C:/mingw64/include/c++/14.2.0/bits/stl_algobase.h \
   C:/mingw64/include/c++/14.2.0/bits/stl_bvector.h \
@@ -1090,6 +1091,7 @@ CMakeFiles/N-Body_Sim.dir/src/Simulation.cpp.obj: C:/Users/matth/Desktop/N-Body_
   C:/mingw64/include/c++/14.2.0/bits/streambuf_iterator.h \
   C:/mingw64/include/c++/14.2.0/bits/string_view.tcc \
   C:/mingw64/include/c++/14.2.0/bits/stringfwd.h \
+  C:/mingw64/include/c++/14.2.0/bits/this_thread_sleep.h \
   C:/mingw64/include/c++/14.2.0/bits/uniform_int_dist.h \
   C:/mingw64/include/c++/14.2.0/bits/unique_ptr.h \
   C:/mingw64/include/c++/14.2.0/bits/unordered_map.h \
@@ -1153,6 +1155,7 @@ CMakeFiles/N-Body_Sim.dir/src/Simulation.cpp.obj: C:/Users/matth/Desktop/N-Body_
   C:/mingw64/include/c++/14.2.0/string \
   C:/mingw64/include/c++/14.2.0/string_view \
   C:/mingw64/include/c++/14.2.0/system_error \
+  C:/mingw64/include/c++/14.2.0/thread \
   C:/mingw64/include/c++/14.2.0/tr1/bessel_function.tcc \
   C:/mingw64/include/c++/14.2.0/tr1/beta_function.tcc \
   C:/mingw64/include/c++/14.2.0/tr1/ell_integral.tcc \
@@ -1188,7 +1191,6 @@ CMakeFiles/N-Body_Sim.dir/src/Simulation.cpp.obj: C:/Users/matth/Desktop/N-Body_
   C:/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/time_members.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/omp.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h \
@@ -1387,6 +1389,7 @@ CMakeFiles/N-Body_Sim.dir/src/main.cpp.obj: C:/Users/matth/Desktop/N-Body_Sim/sr
   C:/mingw64/include/c++/14.2.0/bits/specfun.h \
   C:/mingw64/include/c++/14.2.0/bits/sstream.tcc \
   C:/mingw64/include/c++/14.2.0/bits/std_abs.h \
+  C:/mingw64/include/c++/14.2.0/bits/std_thread.h \
   C:/mingw64/include/c++/14.2.0/bits/stl_algobase.h \
   C:/mingw64/include/c++/14.2.0/bits/stl_bvector.h \
   C:/mingw64/include/c++/14.2.0/bits/stl_construct.h \
@@ -1405,6 +1408,7 @@ CMakeFiles/N-Body_Sim.dir/src/main.cpp.obj: C:/Users/matth/Desktop/N-Body_Sim/sr
   C:/mingw64/include/c++/14.2.0/bits/streambuf_iterator.h \
   C:/mingw64/include/c++/14.2.0/bits/string_view.tcc \
   C:/mingw64/include/c++/14.2.0/bits/stringfwd.h \
+  C:/mingw64/include/c++/14.2.0/bits/this_thread_sleep.h \
   C:/mingw64/include/c++/14.2.0/bits/unique_ptr.h \
   C:/mingw64/include/c++/14.2.0/bits/unordered_map.h \
   C:/mingw64/include/c++/14.2.0/bits/uses_allocator.h \
@@ -1463,6 +1467,7 @@ CMakeFiles/N-Body_Sim.dir/src/main.cpp.obj: C:/Users/matth/Desktop/N-Body_Sim/sr
   C:/mingw64/include/c++/14.2.0/string \
   C:/mingw64/include/c++/14.2.0/string_view \
   C:/mingw64/include/c++/14.2.0/system_error \
+  C:/mingw64/include/c++/14.2.0/thread \
   C:/mingw64/include/c++/14.2.0/tr1/bessel_function.tcc \
   C:/mingw64/include/c++/14.2.0/tr1/beta_function.tcc \
   C:/mingw64/include/c++/14.2.0/tr1/ell_integral.tcc \
@@ -1580,6 +1585,8 @@ _deps/sfml-src/include/SFML/Graphics/CircleShape.hpp:
 
 _deps/sfml-src/include/SFML/Graphics/Color.inl:
 
+C:/mingw64/include/c++/14.2.0/bits/this_thread_sleep.h:
+
 C:/mingw64/include/c++/14.2.0/bits/istream.tcc:
 
 _deps/sfml-src/include/SFML/System/Vector3.hpp:
@@ -1689,6 +1696,8 @@ C:/mingw64/include/c++/14.2.0/streambuf:
 _deps/sfml-src/include/SFML/Graphics/VertexArray.hpp:
 
 _deps/sfml-src/include/SFML/Graphics/VertexBuffer.hpp:
+
+C:/mingw64/include/c++/14.2.0/bits/std_thread.h:
 
 _deps/sfml-src/include/SFML/System/Vector2.hpp:
 
@@ -1869,6 +1878,8 @@ C:/mingw64/include/c++/14.2.0/bits/hashtable.h:
 C:/mingw64/include/c++/14.2.0/bits/hashtable_policy.h:
 
 C:/mingw64/include/c++/14.2.0/bits/ios_base.h:
+
+C:/mingw64/include/c++/14.2.0/thread:
 
 C:/mingw64/include/c++/14.2.0/bits/locale_classes.h:
 
@@ -2195,5 +2206,3 @@ C:/mingw64/include/c++/14.2.0/pstl/glue_numeric_defs.h:
 C:/mingw64/include/c++/14.2.0/random:
 
 C:/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/opt_random.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/omp.h:

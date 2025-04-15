@@ -5,7 +5,7 @@
     #include <algorithm>
     #include <iostream>
     #include "QuadTree.h"
-    #include <omp.h>
+    #include <thread>
 
     QuadTreeNode::Region squilly({960, 540}, 1920, 5);
     QuadTreeNode testTree(squilly, 5); 
@@ -52,11 +52,30 @@
         t.stop();
         treeBuildTimes.push_back(t.elapsed());
 
-        t.start();
         float theta = 0.5;
-        for (auto& body : bodies) {
-            testTree.calculateForces(body, theta);
+        t.start();
+
+
+        std::vector<std::thread> threads;
+        int numBlocks = std::thread::hardware_concurrency(); // allows for use of hyper threading if available.
+        int bodiessPerThread = bodies.size() / numBlocks;
+
+        for (int i=0; i != numBlocks; ++i) {
+            threads.emplace_back([&, i]() { // lambda function so we can construct thread inside the vector
+                int start = i * bodiessPerThread;
+                int end = (i == numBlocks - 1) ? bodies.size() : start + bodiessPerThread; // helps to include leftovers in uneven division
+                for (int j = start; j < end; ++j) {
+                    testTree.calculateForces(bodies[j], theta);
+                }
+            });
         }
+        
+        for (auto& thread : threads) { 
+            thread.join();
+        }
+        threads.clear();
+
+
         t.stop();
         calculateForcesTimes.push_back(t.elapsed());
 

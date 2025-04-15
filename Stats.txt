@@ -1,1 +1,30 @@
 N=5000, Time-Steps=500, Theta=0.5, Capacity=5
+
+Barnes-Hut (1 thread aka sequential): 
+Average Tree Build Time: 12.8503ms
+Average Force Calc Time: 83.7824ms
+Average Update Bodies Time: 0ms
+
+Barnes-Hut (2 threads on the force cal): 
+Average Tree Build Time: 12.2794ms
+Average Force Calc Time: 44.1457ms
+Average Update Bodies Time: 0ms
+Note: We get about a 2x speed up
+
+Barnes-Hut (3 threads on the force cal): 
+Average Tree Build Time: 13.495ms
+Average Force Calc Time: 41.2255ms
+Average Update Bodies Time: 0ms
+Note: About the same as 2 threads
+
+Barnes-Hut (4 threads on the force cal): 
+Average Tree Build Time: 12.3992ms
+Average Force Calc Time: 27.9441ms
+Average Update Bodies Time: 0ms
+Note: 
+
+Barnes-Hut (8 threads on the force cal): 
+Average Tree Build Time: 12.489ms
+Average Force Calc Time: 19.3633ms
+Average Update Bodies Time: 0ms
+Note: Speedup due to Intel hyperthreading

@@ -316,4 +316,6 @@ CMakeFiles/N-Body_Sim.dir/src/Simulation.cpp.obj: \
  C:/mingw64/include/c++/14.2.0/bits/stl_heap.h \
  C:/mingw64/include/c++/14.2.0/pstl/glue_algorithm_defs.h \
  C:/mingw64/include/c++/14.2.0/iostream \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/omp.h
+ C:/mingw64/include/c++/14.2.0/thread \
+ C:/mingw64/include/c++/14.2.0/bits/std_thread.h \
+ C:/mingw64/include/c++/14.2.0/bits/this_thread_sleep.h
