@@ -7,34 +7,35 @@
     #include "QuadTree.h"
     #include <thread>
 
-    QuadTreeNode::Region squilly({960, 540}, 1920, 5);
-    QuadTreeNode testTree(squilly, 5); 
+    int capacity = 125;
+    QuadTreeNode::Region squilly({960, 540}, 1920, capacity);
+    QuadTreeNode testTree(squilly, capacity); 
     
     //RATIO 0.00006
     Simulation::Simulation() {
         std::random_device rd;
         std::mt19937 gen(rd());
     
-        Body bigMass1(960, 540, 10000000.0f, 5.0f, sf::Color(186, 62, 0)); 
+        Body bigMass1(960, 540, 65000000.0f, 5.0f, sf::Color(186, 62, 0)); 
         bodies.push_back(bigMass1);
 
-        int numBodies = 5000;
+        int numBodies = 10000;
         std::uniform_real_distribution<> angleDist(0, 2 * M_PI);
-        std::exponential_distribution<> distDist(0.01);
+        std::exponential_distribution<> distDist(0.004);
         std::uniform_real_distribution<> xDist(0, 1920);
-        std::uniform_real_distribution<> yDist(0, 1090);
+        std::uniform_real_distribution<> yDist(0, 500);
         
         for (int i = 0; i < numBodies; ++i) {
             float angle = angleDist(gen);
 
-            float distance = distDist(gen) + 15;
+            float distance = yDist(gen) + 15;
             float x = bigMass1.getPosition().x + std::cos(angle) * distance;
             float y = bigMass1.getPosition().y + std::sin(angle) * distance;
     
             float velMag = std::sqrt(1.0f*bigMass1.getMass() / distance);
             sf::Vector2f vel = {-std::sin(angle) * velMag, std::cos(angle) * velMag};
             
-            Body bod(x, y, 500.0f, 1.0f, sf::Color::White);
+            Body bod(x, y, 2000.0f, 0.75f, sf::Color::White);
             bod.setVelocity(vel);
             bodies.push_back(bod);
         }
@@ -43,7 +44,7 @@
     void Simulation::update(float deltaTime) {
         t.start();
 
-        testTree = QuadTreeNode(squilly, 5);
+        testTree = QuadTreeNode(squilly, capacity);
         for (auto& body : bodies) {
             testTree.insert(body);
         }
@@ -52,9 +53,8 @@
         t.stop();
         treeBuildTimes.push_back(t.elapsed());
 
-        float theta = 0.5;
+        float theta = 0.7;
         t.start();
-
 
         std::vector<std::thread> threads;
         int numBlocks = std::thread::hardware_concurrency(); // allows for use of hyper threading if available.
@@ -74,7 +74,6 @@
             thread.join();
         }
         threads.clear();
-
 
         t.stop();
         calculateForcesTimes.push_back(t.elapsed());

@@ -28,3 +28,48 @@ Average Tree Build Time: 12.489ms
 Average Force Calc Time: 19.3633ms
 Average Update Bodies Time: 0ms
 Note: Speedup due to Intel hyperthreading
+
+
+Higher capacity per node = fewer subdivisions = smaller tree → Tree is faster to traverse for force calculation
+But to do that... → The tree has to hold more bodies per node, which means more comparisons per node during insert → Tree build time goes up
+also as we increase cpaacity, the accuracy goes down as we are treating more bodies as one for force calkcualtions
+
+Capcity: 1
+Average Tree Build Time: 37.9521ms
+Average Force Calc Time: 23.6447ms
+Average Update Bodies Time: 0ms
+
+Capcity: 5
+Average Tree Build Time: 26.7385ms
+Average Force Calc Time: 19.9741ms
+Average Update Bodies Time: 0ms
+
+Capcity: 15
+Average Tree Build Time: 27.5589ms
+Average Force Calc Time: 19.4711ms
+Average Update Bodies Time: 0ms
+
+Capcity: 30
+Average Tree Build Time: 25.6248ms
+Average Force Calc Time: 15.2255ms
+Average Update Bodies Time: 0ms
+
+Capcity: 60
+Average Tree Build Time: 24.5289ms
+Average Force Calc Time: 12.8723ms
+Average Update Bodies Time: 0ms
+
+Capacity: 80
+Average Tree Build Time: 26.7924ms
+Average Force Calc Time: 12.6866ms
+Average Update Bodies Time: 0ms
+
+Capacity: 100
+Average Tree Build Time: 29.1517ms
+Average Force Calc Time: 12.1617ms
+Average Update Bodies Time: 0ms
+
+Capacity: 120
+Average Tree Build Time: 30.0878ms
+Average Force Calc Time: 11.2555ms
+Average Update Bodies Time: 0ms

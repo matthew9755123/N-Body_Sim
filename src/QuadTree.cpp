@@ -111,9 +111,10 @@ void QuadTreeNode::calculateForces(Body& targetBody, float theta) {
         sf::Vector2f force = Force::calcGravForce(
             targetBody.getMass(), 
             targetBody.getPosition(),
-            region.mass, 
+            region.mass,
             region.centerOfMass
         );
+        
         targetBody.applyForce(force);
         return;
     }
