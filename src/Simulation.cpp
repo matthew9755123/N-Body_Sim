@@ -7,7 +7,7 @@
     #include "QuadTree.h"
     #include <thread>
 
-    int capacity = 60;
+    int capacity = 50;
     QuadTreeNode::Region squilly({960, 540}, 1920, capacity);
     QuadTreeNode testTree(squilly, capacity); 
     
@@ -18,7 +18,7 @@
         std::random_device rd;
         std::mt19937 gen(rd());
 
-        Body bigMass1(960, 540, 50000000.0f, 5.0f, sf::Color::White);
+        Body bigMass1(960, 540, 80000000.0f, 5.0f, sf::Color::White);
         bigMass1.setVelocity({12.0f, 0.0f});
         bodies.push_back(bigMass1);
 
@@ -36,7 +36,7 @@
             float x = bigMass1.getPosition().x + std::cos(angle) * distance;
             float y = bigMass1.getPosition().y + std::sin(angle) * distance;
     
-            float velMag = std::sqrt(bigMass1.getMass() / distance);
+            float velMag = std::sqrt(bigMass1.getMass() / distance * 1.15);
             sf::Vector2f vel = {-std::sin(angle) * velMag, std::cos(angle) * velMag};
             vel += bigMass1.getVelocity();
 
@@ -58,7 +58,7 @@
         t.stop();
         treeBuildTimes.push_back(t.elapsed());
 
-        float theta = 0.9;
+        float theta = 0.8;
         t.start();
 
         std::vector<std::thread> threads;
@@ -84,9 +84,11 @@
         calculateForcesTimes.push_back(t.elapsed());
 
         t.start();
+        
         for (auto& body : bodies) {
             body.update(deltaTime);
         }
+
         t.stop();
         updateBodiesTimes.push_back(t.elapsed());
     }

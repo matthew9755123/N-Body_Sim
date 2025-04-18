@@ -97,7 +97,7 @@ void QuadTreeNode::insert(const Body& body) {
 }
 
 void QuadTreeNode::calculateForces(Body& targetBody, float theta) {
-    if (region.mass == 0) return; //NOT if (bodies.empty()) return;
+    if (region.mass == 0) return;
 
     sf::Vector2f bodyPos = targetBody.getPosition();
     sf::Vector2f regionCOM = region.centerOfMass;
@@ -108,7 +108,7 @@ void QuadTreeNode::calculateForces(Body& targetBody, float theta) {
     float s = region.width;
     
     if (isLeaf || (s / distance) < theta) {
-        sf::Vector2f force = Force::calcGravForce(
+        sf::Vector2f force = Force::calcGravityForce(
             targetBody.getMass(), 
             targetBody.getPosition(),
             region.mass,

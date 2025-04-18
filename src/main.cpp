@@ -22,7 +22,7 @@ int main() {
             }
         }
 
-        //for (i; i <= 500; ++i){
+       // for (i; i <= 500; ++i){
             window.clear(sf::Color::Black);
             simulation.update(fixedDeltaTime);
             simulation.render(window);
