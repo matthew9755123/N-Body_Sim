@@ -7,20 +7,15 @@ sf::Vector2f Force::calcGravForce(float node1Mass, sf::Vector2f node1Pos, float 
     sf::Vector2f distanceVec = node2Pos - node1Pos;
     
     float distanceSquared = distanceVec.x * distanceVec.x + distanceVec.y * distanceVec.y;
-    
-    const float epsilon = 0.001f;
-
-    float softCoreDistance = std::sqrt(epsilon * epsilon + distanceSquared);
-    
-    float forceMagnitude = (G * node1Mass * node2Mass) / (softCoreDistance * softCoreDistance);
-    
+    float softCoreDistance = std::sqrt(0.1 * 0.1 + distanceSquared);
+    float forceMagnitude = (G * node1Mass * node2Mass) / (softCoreDistance * softCoreDistance);    
     float distance = std::sqrt(distanceSquared);
     
     sf::Vector2f forceDirection = (distance > 0.0f) ? (distanceVec / distance) : sf::Vector2f(0.0f, 0.0f);
 
-    if ((node1Mass > 2000.0f || node2Mass > 2000.0f) && distance <= 15.0f) {
+    if ((node1Mass > 21000.0f || node2Mass > 21000.0f) && distance <= 10.0f) {
          return sf::Vector2f({0.0, 0.0});
-    }else if (distance <= 1.5f)
+    }else if (distance <= 1.1f)
     {
         return sf::Vector2f({0.0, 0.0});
     }

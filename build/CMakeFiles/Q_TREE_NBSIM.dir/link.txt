@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\Q_TREE_NBSIM.dir/objects.a
+C:\mingw64\bin\ar.exe qc CMakeFiles\Q_TREE_NBSIM.dir/objects.a @CMakeFiles\Q_TREE_NBSIM.dir\objects1.rsp
+C:\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\Q_TREE_NBSIM.dir/objects.a -Wl,--no-whole-archive -o Q_TREE_NBSIM.exe -Wl,--out-implib,libQ_TREE_NBSIM.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Q_TREE_NBSIM.dir\linkLibs.rsp

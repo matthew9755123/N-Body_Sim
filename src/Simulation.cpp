@@ -7,35 +7,40 @@
     #include "QuadTree.h"
     #include <thread>
 
-    int capacity = 125;
+    int capacity = 60;
     QuadTreeNode::Region squilly({960, 540}, 1920, capacity);
     QuadTreeNode testTree(squilly, capacity); 
     
     //RATIO 0.00006
     Simulation::Simulation() {
+        bodies.reserve(20000);
+
         std::random_device rd;
         std::mt19937 gen(rd());
-    
-        Body bigMass1(960, 540, 65000000.0f, 5.0f, sf::Color(186, 62, 0)); 
+
+        Body bigMass1(960, 540, 50000000.0f, 5.0f, sf::Color::White);
+        bigMass1.setVelocity({12.0f, 0.0f});
         bodies.push_back(bigMass1);
 
-        int numBodies = 10000;
+        int numBodies = 20000;
         std::uniform_real_distribution<> angleDist(0, 2 * M_PI);
-        std::exponential_distribution<> distDist(0.004);
+        std::exponential_distribution<> exDist(0.004);
         std::uniform_real_distribution<> xDist(0, 1920);
-        std::uniform_real_distribution<> yDist(0, 500);
-        
+        std::uniform_real_distribution<> yDist(0, 1080);
+        std::uniform_real_distribution<> circleSize(0, 300);
+
         for (int i = 0; i < numBodies; ++i) {
             float angle = angleDist(gen);
 
-            float distance = yDist(gen) + 15;
+            float distance = circleSize(gen) + 12;
             float x = bigMass1.getPosition().x + std::cos(angle) * distance;
             float y = bigMass1.getPosition().y + std::sin(angle) * distance;
     
-            float velMag = std::sqrt(1.0f*bigMass1.getMass() / distance);
+            float velMag = std::sqrt(bigMass1.getMass() / distance);
             sf::Vector2f vel = {-std::sin(angle) * velMag, std::cos(angle) * velMag};
-            
-            Body bod(x, y, 2000.0f, 0.75f, sf::Color::White);
+            vel += bigMass1.getVelocity();
+
+            Body bod(x, y, 2500.0f, 0.75f, sf::Color::White);
             bod.setVelocity(vel);
             bodies.push_back(bod);
         }
@@ -53,7 +58,7 @@
         t.stop();
         treeBuildTimes.push_back(t.elapsed());
 
-        float theta = 0.7;
+        float theta = 0.9;
         t.start();
 
         std::vector<std::thread> threads;
@@ -87,10 +92,27 @@
     }
 
     void Simulation::render(sf::RenderWindow& window) {
-        for (auto& body : bodies) {
-            body.draw(window);
+        sf::VertexArray points (sf::PrimitiveType::Points, bodies.size());
+
+        for (size_t i = 0; i < bodies.size(); ++i){
+            points[i].position = bodies[i].getPosition();
+            points[i].color = bodies[i].getColor();
         }
-        //testTree.draw(window);
+
+        window.draw(points);
+
+        sf::CircleShape centerCircle;
+        centerCircle.setRadius(6); // visual size in pixels
+        centerCircle.setFillColor(sf::Color::White);
+        centerCircle.setOrigin({6.0f,6.0f}); // center the circle on position
+        centerCircle.setPosition(bodies[0].getPosition()); // assuming it's the first body
+        window.draw(centerCircle);
+
+
+        // for (auto& body : bodies) {
+        //     window.draw(body.getShape());
+        // }
+        //testTree.drawRegionLines(window);
     }
 
     void Simulation::printStats() {

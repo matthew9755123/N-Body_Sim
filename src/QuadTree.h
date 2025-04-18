@@ -69,7 +69,7 @@ public:
 
         void printStats();
 
-        void draw(sf::RenderWindow& window);
+        void drawRegionLines(sf::RenderWindow& window);
 };
 
 #endif

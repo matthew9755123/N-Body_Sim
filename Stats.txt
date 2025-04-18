@@ -34,6 +34,9 @@ Higher capacity per node = fewer subdivisions = smaller tree → Tree is faster 
 But to do that... → The tree has to hold more bodies per node, which means more comparisons per node during insert → Tree build time goes up
 also as we increase cpaacity, the accuracy goes down as we are treating more bodies as one for force calkcualtions
 
+
+N=5000, Time-Steps=500, Theta=0.5
+
 Capcity: 1
 Average Tree Build Time: 37.9521ms
 Average Force Calc Time: 23.6447ms

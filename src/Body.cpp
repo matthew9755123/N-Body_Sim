@@ -1,17 +1,17 @@
 #include "Body.h"
 
 Body::Body(float x, float y, float mass, float radius, sf::Color color)
-    : position(x, y), velocity (0, 0), acceleration(0, 0), mass(mass) {
-        shape.setRadius(radius);
-        shape.setFillColor(color);
-        shape.setPosition(position);
-        shape.setOrigin({shape.getRadius(), shape.getRadius()});
+    : position(x, y), velocity (0, 0), acceleration(0, 0), mass(mass), color(color), radius(radius){
+        // shape.setRadius(radius);
+        // shape.setFillColor(color);
+        // shape.setPosition(position);
+        // shape.setOrigin({shape.getRadius(), shape.getRadius()});
     }
 
     void Body::update(float deltaTime) {
         velocity += acceleration * deltaTime;
         position += velocity * deltaTime;
-        shape.setPosition(position);
+        //shape.setPosition(position);
         acceleration = sf::Vector2f(0, 0);
     }
     
@@ -32,7 +32,7 @@ Body::Body(float x, float y, float mass, float radius, sf::Color color)
     }
 
     float Body::getRadius() const {
-        return shape.getRadius();
+       // return shape.getRadius();
     }
 
     sf::Vector2f Body::getVelocity() const {
@@ -40,6 +40,13 @@ Body::Body(float x, float y, float mass, float radius, sf::Color color)
     }
     
     void Body::draw(sf::RenderWindow& window) const {
-        window.draw(shape);
+        //window.draw(shape);
+    }
+
+    const sf::CircleShape& Body::getShape() const {
+        //return shape;
     }
     
+    sf::Color Body::getColor() {
+        return color;
+    }

@@ -181,7 +181,7 @@ void QuadTreeNode::printStats() {
 }
 
 
-void QuadTreeNode::draw(sf::RenderWindow& window) {
+void QuadTreeNode::drawRegionLines(sf::RenderWindow& window) {
     sf::RectangleShape boundary;
     boundary.setPosition(
         sf::Vector2f(
@@ -200,9 +200,9 @@ void QuadTreeNode::draw(sf::RenderWindow& window) {
     window.draw(boundary);
 
     if (!isLeaf) {
-        northWest->draw(window);
-        northEast->draw(window);
-        southWest->draw(window);
-        southEast->draw(window);
+        northWest->drawRegionLines(window);
+        northEast->drawRegionLines(window);
+        southWest->drawRegionLines(window);
+        southEast->drawRegionLines(window);
     }
 }
