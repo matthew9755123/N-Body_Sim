@@ -6,6 +6,7 @@
     #include <iostream>
     #include "QuadTree.h"
     #include <thread>
+    #include <future>
 
     int capacity = 50;
     QuadTreeNode::Region squilly({960, 540}, 1920, capacity);
@@ -13,7 +14,7 @@
     
     //RATIO 0.00006
     Simulation::Simulation() {
-        bodies.reserve(20000);
+        bodies.reserve(25000);
 
         std::random_device rd;
         std::mt19937 gen(rd());
@@ -22,7 +23,7 @@
         bigMass1.setVelocity({12.0f, 0.0f});
         bodies.push_back(bigMass1);
 
-        int numBodies = 20000;
+        int numBodies = 25000;
         std::uniform_real_distribution<> angleDist(0, 2 * M_PI);
         std::exponential_distribution<> exDist(0.004);
         std::uniform_real_distribution<> xDist(0, 1920);
@@ -61,24 +62,22 @@
         float theta = 0.8;
         t.start();
 
-        std::vector<std::thread> threads;
-        int numBlocks = std::thread::hardware_concurrency(); // allows for use of hyper threading if available.
-        int bodiessPerThread = bodies.size() / numBlocks;
+        int numBlocks = std::thread::hardware_concurrency();
+        int bodiesPerThread = bodies.size() / numBlocks;
 
-        for (int i=0; i != numBlocks; ++i) {
-            threads.emplace_back([&, i]() { // lambda function so we can construct thread inside the vector
-                int start = i * bodiessPerThread;
-                int end = (i == numBlocks - 1) ? bodies.size() : start + bodiessPerThread; // helps to include leftovers in uneven division
+        std::vector<std::future<void>> futures;
+        for (int i = 0; i < numBlocks; ++i) {
+            futures.push_back(std::async(std::launch::async, [&, i]() {
+                int start = i * bodiesPerThread;
+                int end = (i == numBlocks - 1) ? bodies.size() : start + bodiesPerThread;
                 for (int j = start; j < end; ++j) {
                     testTree.calculateForces(bodies[j], theta);
                 }
-            });
+            }));
         }
-        
-        for (auto& thread : threads) { 
-            thread.join();
+        for (auto& f : futures) {
+            f.get();
         }
-        threads.clear();
 
         t.stop();
         calculateForcesTimes.push_back(t.elapsed());

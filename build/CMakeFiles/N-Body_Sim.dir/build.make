@@ -76,75 +76,75 @@ CMakeFiles/N-Body_Sim.dir/src/main.cpp.obj: CMakeFiles/N-Body_Sim.dir/includes_C
 CMakeFiles/N-Body_Sim.dir/src/main.cpp.obj: C:/Users/matth/Desktop/N-Body_Sim/src/main.cpp
 CMakeFiles/N-Body_Sim.dir/src/main.cpp.obj: CMakeFiles/N-Body_Sim.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\matth\Desktop\N-Body_Sim\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/N-Body_Sim.dir/src/main.cpp.obj"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/N-Body_Sim.dir/src/main.cpp.obj -MF CMakeFiles\N-Body_Sim.dir\src\main.cpp.obj.d -o CMakeFiles\N-Body_Sim.dir\src\main.cpp.obj -c C:\Users\matth\Desktop\N-Body_Sim\src\main.cpp
+	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/N-Body_Sim.dir/src/main.cpp.obj -MF CMakeFiles\N-Body_Sim.dir\src\main.cpp.obj.d -o CMakeFiles\N-Body_Sim.dir\src\main.cpp.obj -c C:\Users\matth\Desktop\N-Body_Sim\src\main.cpp
 
 CMakeFiles/N-Body_Sim.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/N-Body_Sim.dir/src/main.cpp.i"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\matth\Desktop\N-Body_Sim\src\main.cpp > CMakeFiles\N-Body_Sim.dir\src\main.cpp.i
+	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\matth\Desktop\N-Body_Sim\src\main.cpp > CMakeFiles\N-Body_Sim.dir\src\main.cpp.i
 
 CMakeFiles/N-Body_Sim.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/N-Body_Sim.dir/src/main.cpp.s"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\matth\Desktop\N-Body_Sim\src\main.cpp -o CMakeFiles\N-Body_Sim.dir\src\main.cpp.s
+	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\matth\Desktop\N-Body_Sim\src\main.cpp -o CMakeFiles\N-Body_Sim.dir\src\main.cpp.s
 
 CMakeFiles/N-Body_Sim.dir/src/Body.cpp.obj: CMakeFiles/N-Body_Sim.dir/flags.make
 CMakeFiles/N-Body_Sim.dir/src/Body.cpp.obj: CMakeFiles/N-Body_Sim.dir/includes_CXX.rsp
 CMakeFiles/N-Body_Sim.dir/src/Body.cpp.obj: C:/Users/matth/Desktop/N-Body_Sim/src/Body.cpp
 CMakeFiles/N-Body_Sim.dir/src/Body.cpp.obj: CMakeFiles/N-Body_Sim.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\matth\Desktop\N-Body_Sim\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/N-Body_Sim.dir/src/Body.cpp.obj"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/N-Body_Sim.dir/src/Body.cpp.obj -MF CMakeFiles\N-Body_Sim.dir\src\Body.cpp.obj.d -o CMakeFiles\N-Body_Sim.dir\src\Body.cpp.obj -c C:\Users\matth\Desktop\N-Body_Sim\src\Body.cpp
+	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/N-Body_Sim.dir/src/Body.cpp.obj -MF CMakeFiles\N-Body_Sim.dir\src\Body.cpp.obj.d -o CMakeFiles\N-Body_Sim.dir\src\Body.cpp.obj -c C:\Users\matth\Desktop\N-Body_Sim\src\Body.cpp
 
 CMakeFiles/N-Body_Sim.dir/src/Body.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/N-Body_Sim.dir/src/Body.cpp.i"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\matth\Desktop\N-Body_Sim\src\Body.cpp > CMakeFiles\N-Body_Sim.dir\src\Body.cpp.i
+	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\matth\Desktop\N-Body_Sim\src\Body.cpp > CMakeFiles\N-Body_Sim.dir\src\Body.cpp.i
 
 CMakeFiles/N-Body_Sim.dir/src/Body.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/N-Body_Sim.dir/src/Body.cpp.s"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\matth\Desktop\N-Body_Sim\src\Body.cpp -o CMakeFiles\N-Body_Sim.dir\src\Body.cpp.s
+	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\matth\Desktop\N-Body_Sim\src\Body.cpp -o CMakeFiles\N-Body_Sim.dir\src\Body.cpp.s
 
 CMakeFiles/N-Body_Sim.dir/src/Force.cpp.obj: CMakeFiles/N-Body_Sim.dir/flags.make
 CMakeFiles/N-Body_Sim.dir/src/Force.cpp.obj: CMakeFiles/N-Body_Sim.dir/includes_CXX.rsp
 CMakeFiles/N-Body_Sim.dir/src/Force.cpp.obj: C:/Users/matth/Desktop/N-Body_Sim/src/Force.cpp
 CMakeFiles/N-Body_Sim.dir/src/Force.cpp.obj: CMakeFiles/N-Body_Sim.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\matth\Desktop\N-Body_Sim\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/N-Body_Sim.dir/src/Force.cpp.obj"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/N-Body_Sim.dir/src/Force.cpp.obj -MF CMakeFiles\N-Body_Sim.dir\src\Force.cpp.obj.d -o CMakeFiles\N-Body_Sim.dir\src\Force.cpp.obj -c C:\Users\matth\Desktop\N-Body_Sim\src\Force.cpp
+	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/N-Body_Sim.dir/src/Force.cpp.obj -MF CMakeFiles\N-Body_Sim.dir\src\Force.cpp.obj.d -o CMakeFiles\N-Body_Sim.dir\src\Force.cpp.obj -c C:\Users\matth\Desktop\N-Body_Sim\src\Force.cpp
 
 CMakeFiles/N-Body_Sim.dir/src/Force.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/N-Body_Sim.dir/src/Force.cpp.i"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\matth\Desktop\N-Body_Sim\src\Force.cpp > CMakeFiles\N-Body_Sim.dir\src\Force.cpp.i
+	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\matth\Desktop\N-Body_Sim\src\Force.cpp > CMakeFiles\N-Body_Sim.dir\src\Force.cpp.i
 
 CMakeFiles/N-Body_Sim.dir/src/Force.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/N-Body_Sim.dir/src/Force.cpp.s"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\matth\Desktop\N-Body_Sim\src\Force.cpp -o CMakeFiles\N-Body_Sim.dir\src\Force.cpp.s
+	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\matth\Desktop\N-Body_Sim\src\Force.cpp -o CMakeFiles\N-Body_Sim.dir\src\Force.cpp.s
 
 CMakeFiles/N-Body_Sim.dir/src/Simulation.cpp.obj: CMakeFiles/N-Body_Sim.dir/flags.make
 CMakeFiles/N-Body_Sim.dir/src/Simulation.cpp.obj: CMakeFiles/N-Body_Sim.dir/includes_CXX.rsp
 CMakeFiles/N-Body_Sim.dir/src/Simulation.cpp.obj: C:/Users/matth/Desktop/N-Body_Sim/src/Simulation.cpp
 CMakeFiles/N-Body_Sim.dir/src/Simulation.cpp.obj: CMakeFiles/N-Body_Sim.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\matth\Desktop\N-Body_Sim\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/N-Body_Sim.dir/src/Simulation.cpp.obj"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/N-Body_Sim.dir/src/Simulation.cpp.obj -MF CMakeFiles\N-Body_Sim.dir\src\Simulation.cpp.obj.d -o CMakeFiles\N-Body_Sim.dir\src\Simulation.cpp.obj -c C:\Users\matth\Desktop\N-Body_Sim\src\Simulation.cpp
+	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/N-Body_Sim.dir/src/Simulation.cpp.obj -MF CMakeFiles\N-Body_Sim.dir\src\Simulation.cpp.obj.d -o CMakeFiles\N-Body_Sim.dir\src\Simulation.cpp.obj -c C:\Users\matth\Desktop\N-Body_Sim\src\Simulation.cpp
 
 CMakeFiles/N-Body_Sim.dir/src/Simulation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/N-Body_Sim.dir/src/Simulation.cpp.i"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\matth\Desktop\N-Body_Sim\src\Simulation.cpp > CMakeFiles\N-Body_Sim.dir\src\Simulation.cpp.i
+	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\matth\Desktop\N-Body_Sim\src\Simulation.cpp > CMakeFiles\N-Body_Sim.dir\src\Simulation.cpp.i
 
 CMakeFiles/N-Body_Sim.dir/src/Simulation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/N-Body_Sim.dir/src/Simulation.cpp.s"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\matth\Desktop\N-Body_Sim\src\Simulation.cpp -o CMakeFiles\N-Body_Sim.dir\src\Simulation.cpp.s
+	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\matth\Desktop\N-Body_Sim\src\Simulation.cpp -o CMakeFiles\N-Body_Sim.dir\src\Simulation.cpp.s
 
 CMakeFiles/N-Body_Sim.dir/src/QuadTree.cpp.obj: CMakeFiles/N-Body_Sim.dir/flags.make
 CMakeFiles/N-Body_Sim.dir/src/QuadTree.cpp.obj: CMakeFiles/N-Body_Sim.dir/includes_CXX.rsp
 CMakeFiles/N-Body_Sim.dir/src/QuadTree.cpp.obj: C:/Users/matth/Desktop/N-Body_Sim/src/QuadTree.cpp
 CMakeFiles/N-Body_Sim.dir/src/QuadTree.cpp.obj: CMakeFiles/N-Body_Sim.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\matth\Desktop\N-Body_Sim\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/N-Body_Sim.dir/src/QuadTree.cpp.obj"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/N-Body_Sim.dir/src/QuadTree.cpp.obj -MF CMakeFiles\N-Body_Sim.dir\src\QuadTree.cpp.obj.d -o CMakeFiles\N-Body_Sim.dir\src\QuadTree.cpp.obj -c C:\Users\matth\Desktop\N-Body_Sim\src\QuadTree.cpp
+	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/N-Body_Sim.dir/src/QuadTree.cpp.obj -MF CMakeFiles\N-Body_Sim.dir\src\QuadTree.cpp.obj.d -o CMakeFiles\N-Body_Sim.dir\src\QuadTree.cpp.obj -c C:\Users\matth\Desktop\N-Body_Sim\src\QuadTree.cpp
 
 CMakeFiles/N-Body_Sim.dir/src/QuadTree.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/N-Body_Sim.dir/src/QuadTree.cpp.i"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\matth\Desktop\N-Body_Sim\src\QuadTree.cpp > CMakeFiles\N-Body_Sim.dir\src\QuadTree.cpp.i
+	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\matth\Desktop\N-Body_Sim\src\QuadTree.cpp > CMakeFiles\N-Body_Sim.dir\src\QuadTree.cpp.i
 
 CMakeFiles/N-Body_Sim.dir/src/QuadTree.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/N-Body_Sim.dir/src/QuadTree.cpp.s"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\matth\Desktop\N-Body_Sim\src\QuadTree.cpp -o CMakeFiles\N-Body_Sim.dir\src\QuadTree.cpp.s
+	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\matth\Desktop\N-Body_Sim\src\QuadTree.cpp -o CMakeFiles\N-Body_Sim.dir\src\QuadTree.cpp.s
 
 # Object files for target N-Body_Sim
 N__Body_Sim_OBJECTS = \
@@ -163,11 +163,11 @@ N-Body_Sim.exe: CMakeFiles/N-Body_Sim.dir/src/Force.cpp.obj
 N-Body_Sim.exe: CMakeFiles/N-Body_Sim.dir/src/Simulation.cpp.obj
 N-Body_Sim.exe: CMakeFiles/N-Body_Sim.dir/src/QuadTree.cpp.obj
 N-Body_Sim.exe: CMakeFiles/N-Body_Sim.dir/build.make
-N-Body_Sim.exe: _deps/sfml-build/lib/libsfml-graphics-s-d.a
+N-Body_Sim.exe: _deps/sfml-build/lib/libsfml-graphics.a
 N-Body_Sim.exe: C:/Users/matth/AppData/Local/Programs/Python/Python313/libs/python313.lib
-N-Body_Sim.exe: _deps/sfml-build/lib/libsfml-window-s-d.a
-N-Body_Sim.exe: _deps/sfml-build/lib/libsfml-system-s-d.a
-N-Body_Sim.exe: _deps/sfml-build/lib/libfreetyped.a
+N-Body_Sim.exe: _deps/sfml-build/lib/libsfml-window.a
+N-Body_Sim.exe: _deps/sfml-build/lib/libsfml-system.a
+N-Body_Sim.exe: _deps/sfml-build/lib/libfreetype.a
 N-Body_Sim.exe: CMakeFiles/N-Body_Sim.dir/linkLibs.rsp
 N-Body_Sim.exe: CMakeFiles/N-Body_Sim.dir/objects1.rsp
 N-Body_Sim.exe: CMakeFiles/N-Body_Sim.dir/link.txt

@@ -318,4 +318,11 @@ CMakeFiles/N-Body_Sim.dir/src/Simulation.cpp.obj: \
  C:/mingw64/include/c++/14.2.0/iostream \
  C:/mingw64/include/c++/14.2.0/thread \
  C:/mingw64/include/c++/14.2.0/bits/std_thread.h \
- C:/mingw64/include/c++/14.2.0/bits/this_thread_sleep.h
+ C:/mingw64/include/c++/14.2.0/bits/this_thread_sleep.h \
+ C:/mingw64/include/c++/14.2.0/future C:/mingw64/include/c++/14.2.0/mutex \
+ C:/mingw64/include/c++/14.2.0/bits/std_mutex.h \
+ C:/mingw64/include/c++/14.2.0/bits/unique_lock.h \
+ C:/mingw64/include/c++/14.2.0/condition_variable \
+ C:/mingw64/include/c++/14.2.0/bits/atomic_futex.h \
+ C:/mingw64/include/c++/14.2.0/atomic \
+ C:/mingw64/include/c++/14.2.0/bits/std_function.h

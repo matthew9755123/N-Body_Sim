@@ -14,7 +14,7 @@ class Body; // forward declaration to inform compiler Body exists
  */
 class Force {
     private: 
-        static const float G = 1.0f;
+        static constexpr float G = 1.0f;
 
     public:
         /**

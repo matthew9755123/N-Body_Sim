@@ -55,11 +55,11 @@ set_target_properties(FLAC::FLAC PROPERTIES
   INTERFACE_LINK_LIBRARIES "\$<\$<BOOL:1>:m>;Ogg::ogg"
 )
 
-# Import target "FLAC::FLAC" for configuration "Debug"
-set_property(TARGET FLAC::FLAC APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+# Import target "FLAC::FLAC" for configuration ""
+set_property(TARGET FLAC::FLAC APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
 set_target_properties(FLAC::FLAC PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "C;RC"
-  IMPORTED_LOCATION_DEBUG "C:/Users/matth/Desktop/N-Body_Sim/build/_deps/sfml-build/lib/libFLACd.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_NOCONFIG "C;RC"
+  IMPORTED_LOCATION_NOCONFIG "C:/Users/matth/Desktop/N-Body_Sim/build/_deps/sfml-build/lib/libFLAC.a"
   )
 
 # Make sure the targets which have been exported in some other

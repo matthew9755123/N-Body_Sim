@@ -21,13 +21,13 @@ CMAKE_ADDR2LINE:FILEPATH=C:/mingw64/bin/addr2line.exe
 CMAKE_AR:FILEPATH=C:/mingw64/bin/ar.exe
 
 //Choose the type of build (Debug or Release)
-CMAKE_BUILD_TYPE:STRING=Debug
+CMAKE_BUILD_TYPE:STRING=
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
-//No help, variable specified on the command line.
-CMAKE_CXX_COMPILER:FILEPATH=C:/mingw64/bin/g++.exe
+//CXX compiler
+CMAKE_CXX_COMPILER:FILEPATH=C:/mingw64/bin/c++.exe
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -55,7 +55,7 @@ CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 //Libraries linked by default with all C++ applications.
 CMAKE_CXX_STANDARD_LIBRARIES:STRING=-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
 
-//No help, variable specified on the command line.
+//C compiler
 CMAKE_C_COMPILER:FILEPATH=C:/mingw64/bin/gcc.exe
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
@@ -101,9 +101,6 @@ CMAKE_EXE_LINKER_FLAGS_RELEASE:STRING=
 
 //Flags used by the linker during RELWITHDEBINFO builds.
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
-
-//No help, variable specified on the command line.
-CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE
 
 //Value Computed by CMake.
 CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=C:/Users/matth/Desktop/N-Body_Sim/build/CMakeFiles/pkgRedirects
@@ -757,8 +754,6 @@ DINPUT_H_FOUND:INTERNAL=1
 DODEFINE_EXTENSIONS:INTERNAL=1
 //Details about finding OpenGL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[opengl32][cfound components: OpenGL ][v()]
-//Details about finding OpenMP
-FIND_PACKAGE_MESSAGE_DETAILS_OpenMP:INTERNAL=[c ][v()]
 //Details about finding Python3
 FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[C:/Users/matth/AppData/Local/Programs/Python/Python313/python.exe][C:/Users/matth/AppData/Local/Programs/Python/Python313/libs/python313.lib][C:/Users/matth/AppData/Local/Programs/Python/Python313/include][C:/Users/matth/AppData/Local/Programs/Python/Python313/Lib/site-packages/numpy/_core/include][cfound components: Interpreter Development NumPy Development.Module Development.Embed ][v3.13.2()]
 //Details about finding Threads
@@ -898,8 +893,6 @@ _Python3_INCLUDE_DIR:INTERNAL=C:/Users/matth/AppData/Local/Programs/Python/Pytho
 //Python3 Properties
 _Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;13;2;64;<none>;cp313-win_amd64;;C:\Users\matth\AppData\Local\Programs\Python\Python313\Lib;C:\Users\matth\AppData\Local\Programs\Python\Python313\Lib;C:\Users\matth\AppData\Local\Programs\Python\Python313\Lib\site-packages;C:\Users\matth\AppData\Local\Programs\Python\Python313\Lib\site-packages
 _Python3_INTERPRETER_SIGNATURE:INTERNAL=1701414d169a4916b5cd2e093238fb14
-//Interpreter reason failure
-_Python3_Interpreter_REASON_FAILURE:INTERNAL=
 //Path to a library.
 _Python3_LIBRARY_DEBUG:INTERNAL=_Python3_LIBRARY_DEBUG-NOTFOUND
 //Path to a library.

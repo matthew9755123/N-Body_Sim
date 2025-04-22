@@ -9,7 +9,7 @@ int main() {
     sf::RenderWindow window(sf::VideoMode({1920, 1080}), "N-Body Simulation", sf::State::Fullscreen);
 
     Simulation simulation;
-    const float fixedDeltaTime = 1.0f / 800.0f;
+    const float fixedDeltaTime = 1.0f / 725.0f;
     size_t i = 0;
 
     int frameCounter;
