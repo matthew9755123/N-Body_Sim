@@ -62,11 +62,11 @@ CMAKE_BINARY_DIR = C:\Users\matth\Desktop\N-Body_Sim\build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/N-Body_Sim.dir/all
+all: CMakeFiles/NBSIM_DrawTree.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/N-Body_Sim.dir/codegen
+codegen: CMakeFiles/NBSIM_DrawTree.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -74,7 +74,7 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/N-Body_Sim.dir/clean
+clean: CMakeFiles/NBSIM_DrawTree.dir/clean
 clean: _deps/sfml-build/clean
 .PHONY : clean
 
@@ -427,39 +427,39 @@ _deps/vorbis-build/lib/clean: _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/c
 .PHONY : _deps/vorbis-build/lib/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/N-Body_Sim.dir
+# Target rules for target CMakeFiles/NBSIM_DrawTree.dir
 
 # All Build rule for target.
-CMakeFiles/N-Body_Sim.dir/all: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/all
-CMakeFiles/N-Body_Sim.dir/all: _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/all
-CMakeFiles/N-Body_Sim.dir/all: _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/all
-CMakeFiles/N-Body_Sim.dir/all: _deps/freetype-build/CMakeFiles/freetype.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\N-Body_Sim.dir\build.make CMakeFiles/N-Body_Sim.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\N-Body_Sim.dir\build.make CMakeFiles/N-Body_Sim.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\matth\Desktop\N-Body_Sim\build\CMakeFiles --progress-num=17,18,19 "Built target N-Body_Sim"
-.PHONY : CMakeFiles/N-Body_Sim.dir/all
+CMakeFiles/NBSIM_DrawTree.dir/all: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/all
+CMakeFiles/NBSIM_DrawTree.dir/all: _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/all
+CMakeFiles/NBSIM_DrawTree.dir/all: _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/all
+CMakeFiles/NBSIM_DrawTree.dir/all: _deps/freetype-build/CMakeFiles/freetype.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NBSIM_DrawTree.dir\build.make CMakeFiles/NBSIM_DrawTree.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NBSIM_DrawTree.dir\build.make CMakeFiles/NBSIM_DrawTree.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\matth\Desktop\N-Body_Sim\build\CMakeFiles --progress-num=17,18,19 "Built target NBSIM_DrawTree"
+.PHONY : CMakeFiles/NBSIM_DrawTree.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/N-Body_Sim.dir/rule: cmake_check_build_system
+CMakeFiles/NBSIM_DrawTree.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\matth\Desktop\N-Body_Sim\build\CMakeFiles 53
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/N-Body_Sim.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/NBSIM_DrawTree.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\matth\Desktop\N-Body_Sim\build\CMakeFiles 0
-.PHONY : CMakeFiles/N-Body_Sim.dir/rule
+.PHONY : CMakeFiles/NBSIM_DrawTree.dir/rule
 
 # Convenience name for target.
-N-Body_Sim: CMakeFiles/N-Body_Sim.dir/rule
-.PHONY : N-Body_Sim
+NBSIM_DrawTree: CMakeFiles/NBSIM_DrawTree.dir/rule
+.PHONY : NBSIM_DrawTree
 
 # codegen rule for target.
-CMakeFiles/N-Body_Sim.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\N-Body_Sim.dir\build.make CMakeFiles/N-Body_Sim.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\matth\Desktop\N-Body_Sim\build\CMakeFiles --progress-num=17,18,19 "Finished codegen for target N-Body_Sim"
-.PHONY : CMakeFiles/N-Body_Sim.dir/codegen
+CMakeFiles/NBSIM_DrawTree.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NBSIM_DrawTree.dir\build.make CMakeFiles/NBSIM_DrawTree.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\matth\Desktop\N-Body_Sim\build\CMakeFiles --progress-num=17,18,19 "Finished codegen for target NBSIM_DrawTree"
+.PHONY : CMakeFiles/NBSIM_DrawTree.dir/codegen
 
 # clean rule for target.
-CMakeFiles/N-Body_Sim.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\N-Body_Sim.dir\build.make CMakeFiles/N-Body_Sim.dir/clean
-.PHONY : CMakeFiles/N-Body_Sim.dir/clean
+CMakeFiles/NBSIM_DrawTree.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NBSIM_DrawTree.dir\build.make CMakeFiles/NBSIM_DrawTree.dir/clean
+.PHONY : CMakeFiles/NBSIM_DrawTree.dir/clean
 
 #=============================================================================
 # Target rules for target _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir
@@ -662,8 +662,8 @@ _deps/freetype-build/CMakeFiles/freetype.dir/clean:
 _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/all: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/all
 _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/all: _deps/ogg-build/CMakeFiles/ogg.dir/all
 _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/all: _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/all
-_deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/all: _deps/vorbis-build/lib/CMakeFiles/vorbisenc.dir/all
 _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/all: _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/all
+_deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/all: _deps/vorbis-build/lib/CMakeFiles/vorbisenc.dir/all
 _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/all: _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps\sfml-build\src\SFML\Audio\CMakeFiles\sfml-audio.dir\build.make _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps\sfml-build\src\SFML\Audio\CMakeFiles\sfml-audio.dir\build.make _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build

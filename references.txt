@@ -1,1 +1,4 @@
-http://arborjs.org/docs/barnes-hut
+http://arborjs.org/docs/barnes-hut 
+https://teaching.hkaiser.org/spring2025/csc4700/
+https://www.sfml-dev.org/
+https://github.com/bshoshany/thread-pool

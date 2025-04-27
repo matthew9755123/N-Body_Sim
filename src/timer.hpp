@@ -17,6 +17,6 @@ public:
     double elapsed()
     {
         auto diff = stop_time - start_time;
-        return std::chrono::duration_cast<std::chrono::milliseconds>(diff).count();
+        return std::chrono::duration_cast<std::chrono::microseconds>(diff).count();
     }
 };

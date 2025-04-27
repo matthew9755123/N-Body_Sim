@@ -1,4 +1,1 @@
 cmake --build build --config Release && build.\N-Body_Sim.exe
-
-we get particles flying off because of numerical instability. We are apporximating laws of motion step by step using euler approximation. When we have particlees in close proximity to large bodies, they get multiplied by a large large deltatme
-with a big delta time, they overshoot and miss force calcualtions
