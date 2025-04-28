@@ -1,33 +1,33 @@
 [
 {
   "directory": "C:/Users/matth/Desktop/N-Body_Sim/build",
-  "command": "C:\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/NBSIM_DrawTree.dir/includes_CXX.rsp -g -o CMakeFiles\\NBSIM_DrawTree.dir\\src\\main.cpp.obj -c C:\\Users\\matth\\Desktop\\N-Body_Sim\\src\\main.cpp",
+  "command": "C:\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/NBSIM_EX1.dir/includes_CXX.rsp -g -o CMakeFiles\\NBSIM_EX1.dir\\src\\main.cpp.obj -c C:\\Users\\matth\\Desktop\\N-Body_Sim\\src\\main.cpp",
   "file": "C:/Users/matth/Desktop/N-Body_Sim/src/main.cpp",
-  "output": "CMakeFiles/NBSIM_DrawTree.dir/src/main.cpp.obj"
+  "output": "CMakeFiles/NBSIM_EX1.dir/src/main.cpp.obj"
 },
 {
   "directory": "C:/Users/matth/Desktop/N-Body_Sim/build",
-  "command": "C:\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/NBSIM_DrawTree.dir/includes_CXX.rsp -g -o CMakeFiles\\NBSIM_DrawTree.dir\\src\\Body.cpp.obj -c C:\\Users\\matth\\Desktop\\N-Body_Sim\\src\\Body.cpp",
+  "command": "C:\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/NBSIM_EX1.dir/includes_CXX.rsp -g -o CMakeFiles\\NBSIM_EX1.dir\\src\\Body.cpp.obj -c C:\\Users\\matth\\Desktop\\N-Body_Sim\\src\\Body.cpp",
   "file": "C:/Users/matth/Desktop/N-Body_Sim/src/Body.cpp",
-  "output": "CMakeFiles/NBSIM_DrawTree.dir/src/Body.cpp.obj"
+  "output": "CMakeFiles/NBSIM_EX1.dir/src/Body.cpp.obj"
 },
 {
   "directory": "C:/Users/matth/Desktop/N-Body_Sim/build",
-  "command": "C:\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/NBSIM_DrawTree.dir/includes_CXX.rsp -g -o CMakeFiles\\NBSIM_DrawTree.dir\\src\\Force.cpp.obj -c C:\\Users\\matth\\Desktop\\N-Body_Sim\\src\\Force.cpp",
+  "command": "C:\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/NBSIM_EX1.dir/includes_CXX.rsp -g -o CMakeFiles\\NBSIM_EX1.dir\\src\\Force.cpp.obj -c C:\\Users\\matth\\Desktop\\N-Body_Sim\\src\\Force.cpp",
   "file": "C:/Users/matth/Desktop/N-Body_Sim/src/Force.cpp",
-  "output": "CMakeFiles/NBSIM_DrawTree.dir/src/Force.cpp.obj"
+  "output": "CMakeFiles/NBSIM_EX1.dir/src/Force.cpp.obj"
 },
 {
   "directory": "C:/Users/matth/Desktop/N-Body_Sim/build",
-  "command": "C:\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/NBSIM_DrawTree.dir/includes_CXX.rsp -g -o CMakeFiles\\NBSIM_DrawTree.dir\\src\\Simulation.cpp.obj -c C:\\Users\\matth\\Desktop\\N-Body_Sim\\src\\Simulation.cpp",
+  "command": "C:\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/NBSIM_EX1.dir/includes_CXX.rsp -g -o CMakeFiles\\NBSIM_EX1.dir\\src\\Simulation.cpp.obj -c C:\\Users\\matth\\Desktop\\N-Body_Sim\\src\\Simulation.cpp",
   "file": "C:/Users/matth/Desktop/N-Body_Sim/src/Simulation.cpp",
-  "output": "CMakeFiles/NBSIM_DrawTree.dir/src/Simulation.cpp.obj"
+  "output": "CMakeFiles/NBSIM_EX1.dir/src/Simulation.cpp.obj"
 },
 {
   "directory": "C:/Users/matth/Desktop/N-Body_Sim/build",
-  "command": "C:\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/NBSIM_DrawTree.dir/includes_CXX.rsp -g -o CMakeFiles\\NBSIM_DrawTree.dir\\src\\QuadTree.cpp.obj -c C:\\Users\\matth\\Desktop\\N-Body_Sim\\src\\QuadTree.cpp",
+  "command": "C:\\mingw64\\bin\\g++.exe -DSFML_STATIC @CMakeFiles/NBSIM_EX1.dir/includes_CXX.rsp -g -o CMakeFiles\\NBSIM_EX1.dir\\src\\QuadTree.cpp.obj -c C:\\Users\\matth\\Desktop\\N-Body_Sim\\src\\QuadTree.cpp",
   "file": "C:/Users/matth/Desktop/N-Body_Sim/src/QuadTree.cpp",
-  "output": "CMakeFiles/NBSIM_DrawTree.dir/src/QuadTree.cpp.obj"
+  "output": "CMakeFiles/NBSIM_EX1.dir/src/QuadTree.cpp.obj"
 },
 {
   "directory": "C:/Users/matth/Desktop/N-Body_Sim/build/_deps/sfml-build/src/SFML/System",

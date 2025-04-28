@@ -20,9 +20,9 @@ FetchContent_Declare(SFML
     SYSTEM)
 FetchContent_MakeAvailable(SFML)
 
-add_executable(NBSIM_DrawTree src/main.cpp src/Body.cpp src/Force.cpp src/Simulation.cpp src/QuadTree.cpp)
+add_executable(NBSIM_EX1 src/main.cpp src/Body.cpp src/Force.cpp src/Simulation.cpp src/QuadTree.cpp)
 
-target_link_libraries(NBSIM_DrawTree Python3::NumPy SFML::Graphics)
+target_link_libraries(NBSIM_EX1 Python3::NumPy SFML::Graphics)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
 
