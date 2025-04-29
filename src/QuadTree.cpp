@@ -108,7 +108,7 @@ void QuadTreeNode::calculateForces(Body& targetBody, float theta) {
     
     // if region is lead or is ratio is less than theta
     if (isLeaf || (s / distance) < theta) {
-        // compute the grav force on the target body from COM 
+        // compute the grav force on the target body from COM
         sf::Vector2f force = Force::calcGravityForce(
             targetBody.getMass(), 
             targetBody.getPosition(),
