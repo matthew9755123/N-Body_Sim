@@ -57,7 +57,7 @@ class Simulation {
         std::vector<float> getStats(int i);
 
         /**
-         * @brief Prints the final statistics of the simulation.
+         * @brief Prints the final statistics of the simulation
          */
         void printFinalStats();
 };

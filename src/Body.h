@@ -9,8 +9,8 @@
  * @class Body
  * @brief A class representing a physical body in 2d space with mass, position, velocity, and acceleration.
  * 
- * @details The 'Body' class encapsulates properties and behaviors of a single body. It provides methods to 
- *          update its state over time, apply external forces, set and retrieve velocity, and render itself using SFML.
+ * @details The Body class encapsulates properties and behaviors of a single body. It provides methods to 
+ *          update its state over time, apply external forces, set and retrieve velocity, and render itself using SFML
  */
 class Body {
     public:  

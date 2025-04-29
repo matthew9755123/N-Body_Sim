@@ -18,32 +18,28 @@ QuadTreeNode::Region QuadTreeNode::Region::getNorthWest() const {
     float quarterWidth = width / 4.0f;
     return Region(
         sf::Vector2f(center.x - quarterWidth, center.y - quarterWidth),
-        width / 2.0f, 1
-    );
+        width / 2.0f, 1);
 }
 
 QuadTreeNode::Region QuadTreeNode::Region::getNorthEast() const {
     float quarterWidth = width / 4.0f;
     return Region(
         sf::Vector2f(center.x + quarterWidth, center.y - quarterWidth), 
-        width / 2.0f, 2 
-    );
+        width / 2.0f, 2);
 }
 
 QuadTreeNode::Region QuadTreeNode::Region::getSouthWest() const {
     float quarterWidth = width / 4.0f;
     return Region(
         sf::Vector2f(center.x - quarterWidth, center.y + quarterWidth), 
-        width / 2.0f, 3
-    );
+        width / 2.0f, 3);
 }
 
 QuadTreeNode::Region QuadTreeNode::Region::getSouthEast() const {
     float quarterWidth = width / 4.0f;
     return Region(
         sf::Vector2f(center.x + quarterWidth, center.y + quarterWidth), 
-        width / 2.0f, 4
-    );
+        width / 2.0f, 4);
 }
 
 //QuadTreeNode Constructor

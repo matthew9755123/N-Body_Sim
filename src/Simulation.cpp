@@ -77,7 +77,6 @@ void Simulation::update(float deltaTime) {
         f.get();
     }
 
-
     t.stop();
     calculateForcesTimes.push_back(t.elapsed()/1000);
 
