@@ -24,7 +24,10 @@ A high-performance, real-time gravitational simulator built in C++ using the Bar
 
 ## 📸 Screenshots
 
-![simulation example](imageurl)  
+![simulation example](src/BHSIM.png)  
+*Image: Barnes-Hut Simulation.*
+
+![simulation example](src/NBODY_SIM.png)  
 *Image: Real-time gravitational simulation with multithreaded force calculations.*
 
 ---
